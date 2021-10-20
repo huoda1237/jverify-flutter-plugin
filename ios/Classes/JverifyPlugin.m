@@ -387,7 +387,7 @@ NSObject<FlutterPluginRegistrar>* _jv_registrar;
     [self setCustomUIWithUIConfig:config configArguments:uiconfigPara];
     
     [JVERIFICATIONService customUIWithConfig:config customViews:^(UIView *customAreaView) {
-        [customAreaView setBackgroundColor:[UIColor redColor]];
+        [customAreaView setBackgroundColor:[UIColor whiteColor]];
         for (NSDictionary *widgetDic in widgets) {
             NSString *type = [self getValue:widgetDic key:@"type"];
             if ([type isEqualToString:@"textView"]) {
